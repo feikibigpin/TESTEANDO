@@ -100,6 +100,7 @@ function draw(){
     if(touchX > width/2 && touchX < width && touchY > height - height/15- width/7 && touchY < height){   
        
       if (magnitude <= 6){
+         background(204);
          textFont(fontOCRB);      
          textSize(height/35);
          textAlign(CENTER);
