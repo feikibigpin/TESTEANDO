@@ -188,8 +188,9 @@ function draw(){
     textSize(height/35);
     textAlign(CENTER);
     textStyle(BOLD);
-    text("EVEN THE STRONGEST EARTHQUAKE",width/2, height - height/2);
-    text("ISN'T STRONG AS YOU!",width/2, height - height/2.2);
+    text("EVEN THE STRONGEST",width/2, height - height/2);
+    text("EARTHQUAKE ISN'T!",width/2, height - height/2.2);
+    text("STRONG AS YOU!",width/2, height - height/2.4);
     
     textFont(fontMetaBold);
     fill(0);
