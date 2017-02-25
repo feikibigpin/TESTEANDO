@@ -67,7 +67,7 @@ function draw(){
     //CREATE THE ELLIPSE AREA
     var x = width/2;
     var y = height/2;
-    var r = energy; 
+    var r = energy*1.3; 
     
     noFill();
     stroke(0);
@@ -189,7 +189,7 @@ function draw(){
     textAlign(CENTER);
     textStyle(BOLD);
     text("EVEN THE STRONGEST",width/2, height - height/2);
-    text("EARTHQUAKE ISN'T!",width/2, height - height/2.15);
+    text("EARTHQUAKE ISN'T!",width/2, height - height/2.1);
     text("STRONG AS YOU!",width/2, height - height/2.56);
     
     textFont(fontMetaBold);
