@@ -67,7 +67,7 @@ function draw(){
     //CREATE THE ELLIPSE AREA
     var x = width/2;
     var y = height/2;
-    var r = energy * 2; 
+    var r = energy; 
     
     noFill();
     stroke(0);
