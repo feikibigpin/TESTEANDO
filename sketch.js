@@ -37,7 +37,8 @@ function draw(){
         
      image(Cover,0,0,windowWidth,windowHeight); 
         
-     } else if (energy > 0.5 && energy < maxEnergy){
+     }  //CIERRRE DEL IF ENERGI < 0.5
+     else if (energy > 0.5 && energy < maxEnergy){
         
      textFont(fontOCRB);
      textSize(height/25);
@@ -94,7 +95,7 @@ function draw(){
       for (var i = 0; i < energy * 100; i++){
         dots[i].move();
         dots[i]. display();
-       }
+       } //CIERRE DEL FOR
        //tap on SEE RESULT
     if(touchX > width/2 && touchX < width && touchY > height - height/15- width/7 && touchY < height){   
        
@@ -103,7 +104,8 @@ function draw(){
          textSize(height/35);
          textAlign(CENTER);
          textStyle(BOLD);
-         text("C´MON,THIS IS JUST A LITTLE SHAKE",width/2, height - height/2);
+         text("C´MON,THIS IS JUST",width/2, height - height/2);
+         text("A LITTLE SHAKE!",width/2, height - height/2.2);
          
          textFont(fontMetaBold);
          fill(0);
@@ -112,22 +114,24 @@ function draw(){
          textAlign(CENTER);
          textStyle(BOLD);
          text("TRY AGAIN",width/4, height - height/15);
-    
-    //tap on TRY AGAIN 
+        
+       //tap on TRY AGAIN 
      if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
        
        image(Cover,0,0,windowWidth,windowHeight); 
        energy = 0;
        
-      }   
-         
+      }  //CIERRE PARENTESIS TRY AGAIN
+       //CIERRE DEL IF MAGNITUDE
+    }   
          //image(myImage1,0,0,windowWidth,windowHeight);
          //tap on the arrow
          /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
          }*/
-       } else if(magnitude > 6 && magnitude <= 7){
+
+      else if(magnitude > 6 && magnitude <= 7){
          
          image(myImage2,0,0,windowWidth,windowHeight);
          //tap on the arrow
@@ -136,43 +140,47 @@ function draw(){
             energy = 0;
           }*/
           
-       } else if(magnitude > 7 && magnitude <= 8){
+       } //CIERRE DEL MAGNITUDE
+       else if(magnitude > 7 && magnitude <= 8){
          image(Mexico,0,0,windowWidth,windowHeight);
          //tap on the arrow
          /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;         }       */ 
                  
-       } else if(magnitude > 8 && magnitude <= 8.5){
+       } //CIERRE DEL MAGNITUDE 
+       else if(magnitude > 8 && magnitude <= 8.5){
         image(Indonesia,0,0,windowWidth,windowHeight);
          //tap on the arrow
         /* if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
          }*/
-       } else if(magnitude > 8.5 && magnitude <= 9){
+       }// CIERRE DEL IF MAGNIUDE
+       else if(magnitude > 8.5 && magnitude <= 9){
          image(Japan,0,0,windowWidth,windowHeight);
          //tap on the arrow
         /* if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
          }*/
-       } else if(magnitude > 9 && magnitude <= 10){
+       } //CIERRE DEL IF MAGNITUDE
+       else if(magnitude > 9 && magnitude <= 10){
          image(Chile,0,0,windowWidth,windowHeight);
          //tap on the arrow
          /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
          }*/
-       }
-   }   
+       }//CIERRE DEL IF MAGNITUDE
+   }//CIERRE DEL IF PRINCIPAL IF(DE LAS POSICIONES PARA EL TOUCH   
    //tap on TRY AGAIN 
    if(touchX > 0 && touchX < width/2 && touchY > height - height/15 - width/7 && touchY <  height){   
        
      image(Cover,0,0,windowWidth,windowHeight);
      energy = 0;
        
-   }  
+   }// CIERRE DEL PARENTESIS ENERGY
         
  } else if(energy >= maxEnergy) {
     textFont(fontOCRB);      
@@ -196,13 +204,15 @@ function draw(){
        image(Cover,0,0,windowWidth,windowHeight); 
        energy = 0;
        
-      }   
+      }   //CIERRE DEL PARENTESIS TRY AGAIN
          
-  }
+  } //CIERRE DEL PARENTESIS MAX ENERGY
         
   
     
-}
+
+  
+} //CIERRE DEL PARENTESIS DRAW
 
 function deviceShaken(){
     
